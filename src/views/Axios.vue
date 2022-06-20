@@ -1,6 +1,8 @@
 <template>
   <div class="box">
     <div class="title">导出excel</div>
+    <svg-icon iconClass="close" className="use" />
+    <!-- <svg-icon class="article-create" /> -->
     <el-button @click="exportExcel">导出</el-button>
   </div>
 </template>
@@ -71,7 +73,7 @@ export default {
         }
       }
 
-      option.fileName  = "省份城市表"; //excel文件名
+      option.fileName = "省份城市表"; //excel文件名
       //excel文件数据
       option.datas = [
         {
